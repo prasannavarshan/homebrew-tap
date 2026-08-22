@@ -1,8 +1,8 @@
 class UpdateToolchain < Formula
   desc "Supply-chain hardened updater for a macOS developer toolchain"
   homepage "https://github.com/prasannavarshan/update-toolchain"
-  url "https://github.com/prasannavarshan/update-toolchain/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "1809b33161c60d445eac47d48cbf5cebb95f2e9f8150019419a3112713ed38db"
+  url "https://github.com/prasannavarshan/update-toolchain/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "c98762e698d9e3795c4745cf324889420c35967ccabf257a3e7447dbb7c3f3a7"
   license "Apache-2.0"
 
   depends_on :macos
