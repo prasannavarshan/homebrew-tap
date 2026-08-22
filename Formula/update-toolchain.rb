@@ -1,13 +1,8 @@
 class UpdateToolchain < Formula
   desc "Supply-chain hardened updater for a macOS developer toolchain"
   homepage "https://github.com/prasannavarshan/update-toolchain"
-  # NOTE: url/sha256 are placeholders until the first tagged release exists.
-  # After tagging v0.1.0:
-  #   curl -sL <url> | shasum -a 256
-  # and paste the digest below. Do not ship this formula with a guessed sha256 —
-  # Homebrew will fail the install, which is the correct behaviour.
   url "https://github.com/prasannavarshan/update-toolchain/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "1809b33161c60d445eac47d48cbf5cebb95f2e9f8150019419a3112713ed38db"
   license "Apache-2.0"
 
   depends_on :macos
