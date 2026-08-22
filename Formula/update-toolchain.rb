@@ -5,7 +5,6 @@ class UpdateToolchain < Formula
   sha256 "75dccd7634746ff9b68bc5477704c01517e7718d9dcaf47b0934aaeba48b290d"
   license "Apache-2.0"
 
-
   depends_on :macos
 
   def install
