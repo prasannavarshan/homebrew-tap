@@ -1,16 +1,10 @@
 class UpdateToolchain < Formula
   desc "Supply-chain hardened updater for a macOS developer toolchain"
   homepage "https://github.com/prasannavarshan/update-toolchain"
-  url "https://github.com/prasannavarshan/update-toolchain/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "3ebe024a4564f24eb824ed0943bbcb5c31cb186baa1efbe461f8f7192aa55b3f"
+  url "https://github.com/prasannavarshan/update-toolchain/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "75dccd7634746ff9b68bc5477704c01517e7718d9dcaf47b0934aaeba48b290d"
   license "Apache-2.0"
 
-  bottle do
-    root_url "https://github.com/prasannavarshan/homebrew-tap/releases/download/update-toolchain-0.3.0"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "726aa29539114c07faa1eab0b6dfb8bf7e3c16c7528b076044e4c3a322cfe7c9"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "f0de783c800c9815fc1992622c5c77191bae42e4946bee18f7b7d62cf663083f"
-    sha256 cellar: :any_skip_relocation, tahoe:         "957815f596dac7ee08da0709be9215ea92bc742dc655a914efd95a17df9e2763"
-  end
 
   depends_on :macos
 
