@@ -4,6 +4,7 @@ Homebrew formulae for my public tools.
 
 ```bash
 brew tap prasannavarshan/tap
+brew trust prasannavarshan/tap      # required: Homebrew gates third-party taps
 brew install update-toolchain
 ```
 
