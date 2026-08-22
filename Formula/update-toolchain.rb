@@ -36,8 +36,8 @@ class UpdateToolchain < Formula
     assert_match "Usage", shell_output("#{bin}/update-toolchain --help")
 
     # The bundled example configs must be present and parseable.
-    assert_predicate prefix/"config/allowed-taps.example", :exist?
-    assert_predicate prefix/"config/npm-pinned.example", :exist?
+    assert_path_exists prefix/"config/allowed-taps.example"
+    assert_path_exists prefix/"config/npm-pinned.example"
 
     # An unknown flag must be rejected rather than silently ignored.
     output = shell_output("#{bin}/update-toolchain --definitely-not-a-flag 2>&1", 1)
