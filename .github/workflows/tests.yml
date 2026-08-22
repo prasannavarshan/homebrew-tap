@@ -18,8 +18,18 @@ jobs:
     strategy:
       matrix:
         # macOS only: update-toolchain is depends_on :macos, so a Linux leg
-        # could only ever fail. Add versions here to bottle for older macOS.
-        os: [ macos-26 ]
+        # could only ever fail.
+        #
+        # Bottles are per-OS-version AND per-arch, so a user on any combination
+        # not listed here falls back to a source build — which drags in
+        # Homebrew's Command Line Tools version gate, the exact thing bottles
+        # are here to avoid. Hence current macOS on both arches, plus the
+        # previous macOS on arm64.
+        #
+        # macos-*-intel is the last x86_64 line GitHub offers: it is supported
+        # until August 2027, after which Actions drops x86_64 macOS entirely.
+        # Drop the intel leg then rather than letting it fail.
+        os: [ macos-26, macos-26-intel, macos-15 ]
     runs-on: ${{ matrix.os }}
     permissions:
       actions: read
