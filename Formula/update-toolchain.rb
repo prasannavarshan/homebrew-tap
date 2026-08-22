@@ -5,6 +5,13 @@ class UpdateToolchain < Formula
   sha256 "75dccd7634746ff9b68bc5477704c01517e7718d9dcaf47b0934aaeba48b290d"
   license "Apache-2.0"
 
+  bottle do
+    root_url "https://github.com/prasannavarshan/homebrew-tap/releases/download/update-toolchain-0.4.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "df0a7e31af767833b58b80cd9f5d302ae96a7419421aacc66f668da192254442"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "2535c9622d66551e5f8bd4f2498750a1f46ef137a4d508fb4e1aca3dfba781ad"
+    sha256 cellar: :any_skip_relocation, tahoe:         "8e6dd7b3775527e7d24492e45e9d92fcad21cf39fe8c32ec2e9e4a31cafeeeb6"
+  end
+
   depends_on :macos
 
   def install
